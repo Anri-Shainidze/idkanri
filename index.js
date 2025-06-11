@@ -11,7 +11,7 @@ function getMovies() {
       if (movies && movies.length > 0) {
         resolve(movies);
       } else {
-        reject("მონაცემები არ მოიძებნა ან ცარიელია");
+        reject("monacemebi ar moidzebna an carielia");
       }
     }, 2000);
   });
@@ -20,12 +20,12 @@ function getMovies() {
 
 getMovies()
   .then((data) => {
-    console.log("ფილმების სია მიღებულია:");
+    console.log("filmebis sia migebulia:");
     console.log(data);
   })
   .catch((error) => {
-    console.error("შეცდომა:", error);
+    console.error("shecdoma aleko:", error);
   })
   .finally(() => {
-    console.log("მოთხოვნის დამუშავება დასრულებულია.");
+    console.log("motxovnis damushaveba migebulia");
   });
